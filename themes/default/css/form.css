@@ -1,0 +1,944 @@
+@charset "utf-8";
+@import url("datepicker.css");
+
+/*-----Tung--------*/
+.title .menu li.active
+{
+    background: none;
+   
+}
+
+.register .inline.menu li.active
+{
+    margin-left: -20px!important;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: auto;
+}
+.register .inline.menu  li.active:first-child span.a-left ,
+.register .inline.menu  li span
+{
+    display: none;
+}
+.register .inline.menu  li.active:first-child
+{
+    margin-left: 0px!important;
+}
+.register .inline.menu  li.active span
+{
+    display: block;
+    height: 100%;
+    width: 20px;
+}
+
+.register .inline.menu  li.active a
+{
+    background: url("../img/active_a.png") repeat-x scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0 25px;
+    width: auto;
+}
+.register .inline.menu  li label
+{
+    line-height: 29px;
+    cursor: auto;
+}
+
+.register .inline.menu li.active:last-child label{
+    display: inline-block;
+    padding: 0 20px 0 25px;
+    width: auto;
+}
+.register .inline.menu li.active:last-child{
+    padding-right: 0px;
+}
+.register .inline.menu li.active:last-child span.a-right
+{
+    display: none;
+}
+.register .inline.menu  li.active span.a-left
+{
+   background: url("../img/active_left.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    left: 0;
+    position: absolute;
+}
+.register .inline.menu  li.active span.a-right
+{
+    background: url("../img/active_right.png") no-repeat scroll 0 0 transparent;
+    float: right;
+	margin-right: -10px;
+}
+.personal_settings
+{
+    background-color: #FFFFFF;
+    border: 1px solid #BABABA;
+    border-radius: 10px 10px 10px 10px;
+    margin: 0 0 20px;
+    width: 780px;
+    padding-bottom: 20px;
+}
+.personal_settings h1.title
+{
+    /*background: url("../img/bg-purple.png") repeat-x scroll left top #920492;*/
+    border-radius: 5px 5px 0 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0;
+    padding: 2px 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #000000;
+    background: #009EE0;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.register .inline.menu  li.active:last-child span.a-right
+{
+    display: block;
+}
+
+.salutation
+{
+    font-size: 14px;
+    padding: 5px 10px;
+    clear: both;
+}
+.actions label ,
+.personal_settings label
+{
+    cursor: text;
+}
+.personal_settings .clearfix
+{
+    display: inline;
+}
+.salutation>label {
+    float: left;
+    width: 250px;
+    padding-top:10px;
+}
+.salutation  input
+{
+    display: block;
+    float: left;
+    border-radius: 0px;
+    
+}
+.salutation   span
+{
+    display: block;
+    float: left;
+    padding: 4px 20px 0 0;
+}
+.salutation select {
+    margin: 0;
+    border-radius: 0px;
+    width: 80px;
+}
+.salutation input[type='password'] ,
+.salutation input[type='text']
+{
+    height: 20px;
+    width: 300px;
+}
+.salutation input.last
+{
+    margin-left: 4px;
+    width: 40px;
+}
+.salutation input.first
+{
+    margin-right: 4px;
+    width: 40px;
+}
+.salutation #country select
+{
+    width: 100%;
+}
+.personal_settings .note {
+    padding: 10px;
+    width: 300px;
+}
+.salutation.check {
+    padding-left: 100px;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.salutation.check  span
+{
+    line-height: 15px;
+
+}
+.salutation.check input[type="checkbox"]
+{
+    margin-right: 5px;
+}
+.salutation.check  span a
+{
+    color:#000000;
+    text-decoration: underline;
+}
+#registerbutton
+{
+    /*background: url("../img/bg-purple.png") repeat-x scroll left top #920492;*/
+    border: 1px solid #009EE0;
+    background: #009EE0;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #F4ECF4;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-family: "Century Gothic",sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 14px;
+    outline: medium none;
+    padding: 0.5em 2em 0.55em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+.purple-box ul {
+    font-size: 11px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 10px 15px 10px 10px;
+}
+.purple-box ul li
+{
+    line-height: 15px;
+    padding: 5px;
+}
+.salutation .span5.error {
+    padding-left: 225px;
+    color: #8A1F11;
+}
+/*--page profile------*/
+.frontend_account {
+    background: -moz-linear-gradient(center top , #FDC58C, #EB7A05) repeat scroll 0 0 transparent  !important;
+    border: 1px solid #DC7205;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #FDF1E6;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Century Gothic",sans-serif;
+    font-weight: bold;
+    outline: medium none;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.frontend_account {background: -moz-linear-gradient(center top , #FDC58C, #EB7A05) repeat scroll 0 0 transparent  !important; }
+}
+
+.wrapper_profile.wp_profiles .slider-box.purple-grid.profile
+{
+    float: left;
+    font-size: 11px;
+    margin-bottom: 20px;
+    width:100%;
+}
+.wrapper_profile.wp_profiles .slider-box.purple-grid.profile {
+    width: 387px;
+}
+.wrapper_profile.wp_profiles  .profile:nth-child(5) ,
+.wrapper_profile.wp_profiles  .profile:nth-child(2)
+{
+    float:right!important;
+}
+.info_profile {
+    padding: 10px;
+}
+.info_profile ul {
+    margin: 0;
+    list-style-type: none;
+    
+}
+.info_profile div.title,.info_profile div.text {
+padding-left: 10px;
+}
+div.title{
+    font-weight: bold;
+/*background-color: gainsboro;*/
+}
+    
+form#validation {
+    padding: 20px 0;
+}
+form#validation input[type="submit"]
+{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.wrapper_profile.wp_profiles  .profile:nth-child(3)
+{
+    /*width: 100%!important;*/
+}
+.info_profile.check  span {
+    display: block;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: -16px;
+    padding-left: 20px;
+}
+.message_profile
+{
+    background: none repeat scroll 0 0 white;
+    /*margin-bottom: 20px;*/
+    margin-top: 5px;
+    padding: 0 10px 10px;
+    /*border-bottom: 1px solid #BABABA;*/
+}
+.message_profile h1 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.delete
+{
+    display: block;
+    float: left;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+.delete  span {
+    color: #000000;
+}
+.purple-box a {
+    color: #000000;
+}
+/*end -age profile---*/
+/*---page-loss pass------*/
+.forgot {
+    margin-bottom: 80px;
+}
+.row-fluid.loss_pass
+{
+    position: relative;
+}
+.loss_pass  input ,
+.back_link
+{
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Century Gothic",sans-serif;
+    font-weight: bold;
+    outline: medium none;
+    padding: 0.5em 2em 0.55em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    background: url("../img/bg-purple.png") repeat-x scroll left top #920492;
+    border: 1px solid #883F88;
+    color: #F4ECF4;
+}
+.loss_pass 
+{
+    bottom: -90px;
+    margin-left: -10px;
+}
+
+#LostPasswordForm_email
+{
+
+
+}
+.info_losspass
+{
+    padding:20px 10px 10px;
+}
+.lt_pass .row-fluid label
+{
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.top_text.lt_pass p {
+    padding-top: 5px;
+}
+.loss_pass  input
+{
+    padding:12px 20px;
+    margin-left: 4px;
+}
+.back_link:hover
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/*--end page loss pass --*/
+/*--button-banner--*/
+.col-right .right-box ,
+.top-ads
+{
+    position: relative;
+}
+a.btn_baner_abid {
+    outline: medium none;
+    position: absolute;
+    right: 0;
+}
+.top-ads a.btn_baner_abid
+{
+    top: 0;
+    
+}
+a.btn_baner_abid:hover
+{
+    opacity: 0.9;
+}
+.top-ads a.btn_baner_abid:active
+{
+    top:2px;
+}
+.right-box a.btn_baner_abid
+{
+    bottom: 0px;
+    left: 0px;
+}
+.right-box a.btn_baner_abid:active
+{
+    bottom: -2px;
+}
+.right-box a.btn_baner_abid:hover
+{
+    width: 176px;
+    height: 87px;
+    display: block;
+}
+/*--end button-banner--*/
+/*--pager-----*/
+.pager {
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 10px;
+    clear: both;
+}
+.pager .paginate_button
+{
+    background: -moz-linear-gradient(center top , #F9F9F9 0%, #F1F1F1 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #DDDDDD;
+    color: #333333;
+    cursor: pointer;
+    font-size: 11px;
+    margin-left: 3px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+.pager .paginate_button:hover {
+    box-shadow: 0 1px 3px #CCCCCC inset, 0 1px 0 white;
+    color: #666666;
+}
+.pager .page.paginate_active {
+    background: -moz-linear-gradient(center top , #999999 0%, #888888 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #777777;
+    color: #0F0D0D !important;
+    cursor: pointer;
+    font-size: 11px;
+    margin-left: 3px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+/*--end pager----*/
+/*-------page Summer--*/
+.summary_left
+{
+    width: 179px;
+    float: left;
+    min-height: 600px;
+}
+.summary_right
+{
+    width: 770px;
+    float: right;
+    min-height: 600px;
+}
+.box_sumleft {
+    margin-bottom: 30px;
+}
+.box_sumleft>h4 ,
+.box_sumleft table {
+    margin-left: 10px;
+}
+.box_sumleft textarea {
+    height: 270px;
+    width: 51%;
+    border-radius: 2px;
+}
+.btn_violet
+{
+    background: url("../img/bg-purple.png") repeat-x scroll left top #920492!important;
+}
+.btn_large
+{
+    width:190px!important;
+    height: 50px!important;
+    font-size: 15px!important;
+    color:#ffffff!important;
+    font-weight: bold!important;
+}
+.box_sumleft label
+{
+    cursor: text;
+}
+.box_sumleft a
+{
+    color:#000000;
+    text-decoration: underline;
+}
+.txtbold{
+    font-weight: bold!important;
+}
+
+.btn-orange
+{
+    background-image: url('../img/bgr_btn.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    border: 1px solid #DC7205;
+    background-color:#FFA61A ;
+    color: #FDF1E6;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    outline: medium none;
+    padding: 0.5em 1em 0.55em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-orange:hover
+{
+    opacity: 0.8;
+}
+.btn-orange-nomal
+{
+    width:100px!important;
+}
+.box_sumleft .btn-orange {
+    margin-top: 15px;
+}
+/*--end Page Summer--*/
+/*---End Tung----*/
+/* ---thuba----*/
+/* ---my view----*/
+.detail_product .prd{
+	width:191px ;
+	padding-top:0px;
+}
+.detail_product .imge{
+	width:144px;
+	padding-top:0px;
+}
+
+.detail_product .btn-bid {
+    background: url("../img/btn-prd.png") no-repeat scroll left top transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 25px;
+    padding: 8px 0;
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 0 #D28309;
+    width: 71px;
+}
+.detail_product .link{
+	padding-top:0px;
+}
+.detail_product .row{
+	padding-top:0px;
+}
+.detail_product .buyer{
+	padding-right: 35px;
+}
+/* ---end page my view----*/
+/* ---shoping_cat----*/
+.inline.menu.shoping_cat > li{
+	width: 206px;
+}
+
+.col-left .cart-wrapper .title .shoping_cat > .active, .col-left .cart-wrapper .title .shoping_cat > .active > .active:hover, .col-left .cart-wrapper .title .shoping_cat > .active > .active:focus {
+  background: url("../img/active_shop.png") no-repeat scroll left top ;
+  width: 312px  !important;
+}
+.top_td{
+ font-size: 14px !important;
+ color:#920492;
+ padding: 29px 11px 6px;
+
+}
+.top_td > b{
+	 padding-top: 27px;
+}
+.center_shopping {
+	padding: 52px 74px 92px 15px;
+}
+.center_shopping .right{
+	float:right
+}
+.center_shopping .left{
+	float:left
+}
+.prd > a {
+	color: #333333;
+}
+.introduce th{
+	 color: #737572;
+}
+.span2.font.double{
+	border-top-style: double;
+    border-color: #C7C7C7;
+	border-bottom: 1px solid #C7C7C7;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.span1.fonts.one{
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.span2.width{
+	width: 170px;
+}
+/* ---end page shoping_cat----*/
+/* ---Account transaction----*/
+.acount_transaction{
+	border: 1px solid #DDDDDD;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border-collapse: separate;
+}
+.overview {
+	color: #fff7ee;
+	
+}
+.acount_transaction .day{
+	width: 100px;
+}
+.acount_transaction .summe{
+color:#171819;
+}
+.acount_transaction .booking {
+    width: 585px;
+
+}
+
+.acount_transaction .booking.summe > b {
+    float: right;
+}
+
+.acount_transaction .day > span {
+    margin-left: -8px;
+}
+.acount_transaction  .Value p {
+    text-align:right;
+	padding-right: 20px;
+	}
+.acount_transaction  .Value b {
+    text-align:right;
+	padding-right: 20px;
+	}
+.acount_transaction th{
+    border:none;
+}
+.acount_transaction .vert{
+	text-align:right;
+	padding-right: 20px;
+}
+.changepassword{
+	padding: 30px;
+}
+.pull-left.col-left .overview h4 {
+    text-shadow: 1px 1px 1px #333333;
+}
+/* ---end page Account transaction----*/
+/* ---change password----*/
+.save{
+	border-radius: 5px;
+}
+/* ---end page change password----*/
+/* ---page Request password----*/
+.request{
+	margin: 0;
+    padding-top: 10px;
+}
+.loss_pass{
+margin-bottom: 30px;
+}
+.top_text {
+	padding-bottom: 0px;
+}
+
+.forgot {
+    margin-bottom: 134px;
+}
+
+
+/* ---end page Request password----*/
+/* ---summary----*/
+.amount{
+	color: #707070;
+}
+.euro{
+	text-align: center;
+	padding-right: 30px;
+	color: #707070;
+    line-height: 20px;
+}
+.border-none .border_double{
+    border-bottom: 1px solid #C7C7C7;
+    border-color: #C7C7C7;
+    border-top-style: double;
+    margin-top: 10px;
+    padding-bottom: 10px;
+	
+}
+.border-none .border_double_right{
+    border-bottom: 1px solid #C7C7C7;
+    border-color: #C7C7C7;
+    border-top-style: double;
+    margin-top: 10px;
+    padding-bottom: 10px;
+	text-align:right;
+	margin-right: 30px;
+	
+}
+.border-none{
+border-top: none  !important;
+border-bottom: none !important;
+}
+/* ---end page summary----*/
+/* --- page My-completed----*/
+.complete tr td{
+ vertical-align:center !important;
+
+}
+.complete .link{
+	vertical-align:middle !important;
+}
+.complete .imge{
+	vertical-align:middle !important;
+}
+.complete .prd{
+	vertical-align:middle !important;
+}
+.complete .row{
+	vertical-align:middle !important;
+}
+  table.detail_product.complete
+        {
+                table-layout: fixed; word-wrap: break-word;
+     }
+
+.table.complete span {
+	color: #333333!important;
+    font-size: 11px;
+    left: 379px;
+    margin-left: -16px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.table.complete .prd a {
+    color: #333333;
+}
+table .fisrt{
+	width:15%;
+}
+table .second{
+	width: 177px;
+}
+table .third{
+	width:13%;
+}
+table .fourth{
+	width:10%;
+}
+table .seven{
+	width:10%;
+}
+table .eight{
+	width:20%;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.register .inline.menu li.active span.fix-register{ margin-top:-29px !important; }
+}
+
+/* ---end page My-completed----*/
+/* ---end page changeaccount----*/
+.table_changeacount{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin-top: 20px;
+	
+}
+.table_changeacount td ,th{
+ /*border-right: 1px solid #ddd;*/
+  text-align: center;
+}
+.table_changeacount .end{
+border: none !important;
+}
+.table_changeacount .radio, .checkbox{
+	padding-left: 80px !important;
+}
+.description{
+	 border-top: 1px solid #ddd;
+	 border-bottom: 1px solid #ddd;
+	 padding: 10px;
+	 margin: 10px 0 10px 0;
+}
+.paypal{
+text-align: left !important;
+}
+.inline.paypal > li{
+	border: 1px solid #ddd;
+	width: 150px;
+	height: 150px;
+}
+.pice_paypal{
+	border-top: 1px solid #ddd;
+	 height: 80px;
+}
+.icon_paypal{
+	float: left;
+	width: 150px;
+	border-right: 1px solid #ddd;
+	height: 80px;
+}
+.link_paypal{
+	width: 310px;
+	float: left;
+	padding-top: 25px;
+	border-right: 1px solid #ddd;
+	height: 55px;
+}
+.btn_paypal{
+	background: url("../img/btn-green2.png") no-repeat scroll left top transparent;
+    color: white;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+    width: 110px;
+    margin-left: 150px;
+    margin-top: -10px;
+    line-height: 15px;
+}
+.paypal_descrip{
+	 text-align: center;
+	 padding-top: 25px;
+}
+
+.text_paypal {
+    padding-right: 40px;
+    padding-left: 57px;
+    float:left;
+    font-size: 15px;
+    text-decoration: underline!important;
+    font-weight: bold;
+}
+
+.fix-cart {
+    padding: 10px;
+}
+.menu-item {
+    width: 156px;
+    float: left;
+    text-align: center;
+}
+
+.menu-text{
+    color: rgb(184, 178, 178);
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 28px;
+    margin-right: -1px;
+
+}
+.arrow {
+    background: url("../img/active_right.png") no-repeat scroll right center transparent;
+    float: right;
+    width: 16px;
+    height: 28px;
+    margin-right: 1px;
+}
+.arrow2 {
+    background: url("../img/bg-mt.png") no-repeat scroll right center transparent;
+    float: right;
+    width: 16px;
+    height: 28px;
+}
+
+.menu-text a,.menu-text a:hover {
+    color: #ffffff;
+}
+
+.menu-item .active a {
+    background: url("../img/1.png") repeat-x scroll 0 0 transparent;
+    display: inline-block;
+    width: 134px;
+    margin-right: -4px;
+}
+.menu-item .fix-first-menu {
+    background: url("../img/active.png") no-repeat scroll left top transparent;
+    display: inline-block;
+    margin-left: -4px;
+}
+.menu-item .fix-last-menu {
+    background: url("../img/active_final.png") no-repeat scroll right top transparent;
+    display: inline-block;
+    padding-right: 12px;
+}
+
+.fix-checkout {
+    line-height: 23px;
+    margin-right: 32px!important;
+}
+
+.menu_normal a {
+    /*margin-left: -13px;
+    padding-right: 13px;*/
+    margin-left: -17px;
+    padding-right: 7px;
+    padding-left: 10px;
+}
+
+.menu_last a{
+   /* margin-left: -8px;
+    padding-right: 12px!important;*/
+    margin-left: -12px;
+    padding-right: 4px!important;
+}
+/* ---end page changeaccount----*/
+/* ---end thuba----*/
+
+.change_pass {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+}
+.save_my_profile {
+    margin-right: 20px;
+    float: right;
+    margin-top: 10px;
+}

@@ -1,0 +1,243 @@
+/*	MAINCATEGORIES
+        ------------------------ */
+#mainNavigation>ul{
+    list-style: none;
+    margin: 0;
+    float: left;
+    width:100%;
+    padding: 0; 
+}
+#mainNavigation {padding: 1px 0 0 15px; width: 983px; margin: 20px 0px 0 1px;line-height: 30px;position: relative;height: 32px;}
+#mainNavigation li {float: left;position: static;list-style:none;}
+#mainNavigation a {display: block;padding: 0px 15px;border-right: 1px solid;border-left: 1px solid;position: static;}
+#mainNavigation a.active {font-weight: 700;height:31px;border: 1px solid; border-bottom: 0 none;background: url("../img/backgrounds/bg_navigation_top_active.jpg") repeat-x;}
+#mainNavigation ul li ul {display: none;}
+
+/* Drop down menu */
+#mainNavigation ul li.dropactive:hover a {border: 1px solid;height: 35px;position: relative;z-index: 3000;}
+#mainNavigation li:hover ul.dropdown, #mainNavigation li:hover ul.droplevel {display: block;position: absolute;background: #fff;width:250px;z-index:2000;margin-top: -1px;border: 1px solid #000;}
+#mainNavigation ul li ul.dropdown li {position: relative}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub {background: url(../img/arrows/bg_arrow-small_right.gif) 240px center no-repeat;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub:hover {background: url(../img/arrows/bg_arrow-small_right_white.gif) right center no-repeat;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li a {border: 0 none;background: 0 none;display:block;height:30px;line-height:30px;border-bottom:1px solid;width:220px;}
+#mainNavigation ul li.dropactive:hover ul.droplevel {display: none;position: absolute;left: 250px;top:0;border: 1px solid;width: 250px;}
+#mainNavigation ul li.dropactive:hover li.sub:hover ul.droplevel {display:block;}
+#mainNavigation ul li.dropactive:hover li.sub:hover ul.droplevel ul.droplevel {display: none;}
+#mainNavigation ul li.dropactive:hover li.sub:hover ul.droplevel li:hover ul.droplevel {display: block;}
+
+
+/* ------------------- */
+#mainNavigation {background-color: #e1540f;}
+#mainNavigation a {color:#fff;border-left-color: #e1540f;border-right-color:#eb6600;}
+#mainNavigation .dropactive:hover a {color: #e1540f;}
+#mainNavigation a.first {border-left-color: #eb6600;}
+#mainNavigation a.active {color: #e1540f;}
+
+/* Drop down menu */
+#mainNavigation ul li.dropactive:hover a {background-image: none;background-color: #000;border-color: #000;border-bottom-color: #dfdfdf;color: #fff;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover a {color: #fff;background-color: transparent;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li a {color: #e1540f; background-color: #fff;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li:hover a {color: #fff;background-color: #e1540f;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li:hover li a {color: #e1540f;background-color: #fff;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li:hover li:hover a {background-color: #e1540f;color:#fff;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li li:hover a {color: #fff;} 
+#mainNavigation ul li.dropactive:hover li:hover a {color: #fff;background-color: #e1540f;}
+#mainNavigation li:hover ul.dropdown, #mainNavigation li:hover ul.droplevel {background-color: #000; border: none;}
+#mainNavigation ul li.dropactive:hover ul.droplevel {background-color: #000;border-color: #000;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub {background-color: #000;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub:hover {background-color: #333333;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li a {color:#808080;border-color: #333333;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub ul li a {background: #000; color: #808080;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub ul li a:hover {background: #333333; color: #fff;}
+
+
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub {background: url(../img/icons/ico_listing-next.png) 230px center no-repeat;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub:hover {background: url(../img/backgrounds/left_nav_arrow_right_active.png) 235px center no-repeat #333;}
+
+
+
+/* MAIN-NAVIGATION
+        ------------------------ */
+#mainNavigation {background: url(../img/backgrounds/mainnavigation_bg.png) repeat-x 0 0 #e1540f; margin: 0 auto; height: 39px; padding: 0 0 0 0; width: 1020px;border-bottom: 1px solid #c30000; line-height: 40px;}
+#mainNavigation a {padding:2px 5px 0px 5px; height: 37px; cursor: pointer;}
+#mainNavigation a span {background: transparent;display: block;margin: 0;padding: 0 10px 0px;height: 40px;line-height: 40px;}
+
+#mainNavigation a:hover {background: transparent; text-decoration: none;}
+#mainNavigation a:hover span{background: #000; color: #fff; margin: 0px 0; height: 38px; line-height: 40px;}
+
+#mainNavigation a.active {background: url(../img/backgrounds/mainnav_shadow.png) no-repeat -3px 3px transparent; color: #fff; border: 0 none; height: 38px;}
+#mainNavigation a.active span  {background: #fff; color: #000; height: 40px;}
+#mainNavigation a.active:hover span {background: #fff; color: #e1540f; height: 40px; margin: 0; line-height: 40px;}
+
+#mainNavigation ul li.dropactive:hover a {background: transparent; border-style:none solid; border-width: 0 1px; border-color: #e1540f #eb6600 #e1540f #e1540f; }
+#mainNavigation ul li.dropactive:hover a span {background: #000; height: 38px; color: #fff;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li a {height:25px;line-height:25px; padding: 0 20px 0 10px;}
+#mainNavigation ul li.dropactive a:hover span {height: 39px;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub ul {margin: 0px; border: 0; border-left: 1px solid #333;}
+
+#mainNavigation ul li.active.dropactive:hover a {background: url(../img/backgrounds/mainnav_shadow.png) no-repeat -3px 3px transparent;}
+
+#mainNavigation li:hover ul.dropdown, 
+#mainNavigation li:hover ul.droplevel {margin-left: 6px;margin-top: 2px;}
+#mainNavigation li.active:hover ul.dropdown {margin-left: 5px;}
+
+
+
+/* ------------------- */
+#mainNavigation {background-color: #009ee0;}
+#mainNavigation a {color:#fff;border-left-color: #009ee0;border-right-color:#32b2e7;}
+#mainNavigation .dropactive:hover a {color: #009ee0;}
+#mainNavigation a.first {border-left-color: #32b2e7;}
+#mainNavigation a.active {color: #009ee0;}
+
+/* Drop down menu */
+#mainNavigation ul li.dropactive:hover a {background-image: none;background-color: transparent;border-color: #000;border-bottom-color: #dfdfdf;color: #fff;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover a {color: #fff;background-color: #333333;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li a {color: #009ee0; background-color: #fff;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li:hover a {color: #fff;background-color: #009ee0;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li:hover li a {color: #009ee0;background-color: #fff;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li:hover li:hover a {background-color: #009ee0;color:#fff;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li li:hover a {color: #fff;} 
+#mainNavigation ul li.dropactive:hover li:hover a {color: #fff;background-color: #009ee0;}
+#mainNavigation li:hover ul.dropdown, #mainNavigation li:hover ul.droplevel {background-color: #000; border: none;}
+#mainNavigation ul li.dropactive:hover ul.droplevel {background-color: #000;border-color: #000;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub {background-color: #000;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub:hover {background-color: #333333;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li a {color:#808080;border-color: #333333;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub ul li a {background: #000; color: #808080;}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub ul li a:hover {background: #333333; color: #fff;}
+
+#mainNavigation {border-color: #005376;}
+
+#mainNavigation ul li.dropactive:hover a {
+    border-color: #009ee0 #009ee0 #009ee0 #009ee0;
+}
+
+/* ------------------- */
+
+#mainNavigation {
+    border-bottom: 1px #fff solid;
+}
+#mainNavigation li a:hover span,#top-menu .active span{
+    color: #999 !important;
+    background: #fff;
+}
+#servicenav .heading {
+    background-color: #009ee0 !important;
+    color: #fff !important;
+}
+/* drop down */
+#mainNavigation ul li.dropactive:hover a span {
+    background: #fff !important;
+    color: #999 !important;
+}
+#mainNavigation ul li.dropactive:hover a {
+    background-image: none;
+    background-color: transparent;
+    border-left-color: #009EE0;
+    border-right-color: #32B2E7;
+    color: #999;
+}
+
+#mainNavigation ul li.dropactive:hover ul {
+    box-shadow: 0px 1px 1px #e1e1e1;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover a {
+    color: #fff;
+    background-color: #009ee0;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li a {
+    color: #999;
+    background-color: #fff;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li:hover a {
+    color: #999;
+    background-color: #999;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li:hover li a {
+    color: #999;
+    background-color: #fff;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li:hover li:hover li:hover a {
+    background-color: #999;
+    color:#999;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li li:hover a {
+    color: #999;
+} 
+#mainNavigation ul li.dropactive:hover li:hover a {
+    color: #999;
+    background-color: #999;
+}
+#mainNavigation li:hover ul.dropdown, #mainNavigation li:hover ul.droplevel {
+    background-color: #fff;
+    border: none;
+}
+/*--------------*/
+#mainNavigation ul li.dropactive:hover ul.droplevel {
+    background-color: #fff;
+    border-color: #e1e1e1 !important;
+    border-top: 1px solid #e1e1e1 !important;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub {
+    background-color: #fff;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub:hover {
+    color: #fff;
+    background-color: #009ee0;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li a {
+    color:#808080;
+    border-color: #e1e1e1 !important;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub ul li a {
+    background: #fff;
+    color: #808080;
+}
+#mainNavigation ul li.dropactive:hover ul.dropdown li.sub ul li a:hover {
+    color: #fff;
+    background: #009ee0;
+}
+
+ul#top-menu-poss{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: -35px;
+    left: 0px;
+}
+ul#top-menu-poss li{
+    border: none; 
+    margin-right: 5px; 
+    float: left; 
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+ul#top-menu-poss li:first-child a{
+    line-height: 15px;
+}
+ul#top-menu-poss li a{ 
+    background: #66c8ef;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 5px 25px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+}
+ul#top-menu-poss li a:hover{
+    background: #ff1617;
+    color: #FFFFFF;
+    height: 25px;
+}
+ul#top-menu-poss li a.active{
+background:#FF1617;
+    color: #FFFFFF;
+    height: 25px;
+    }

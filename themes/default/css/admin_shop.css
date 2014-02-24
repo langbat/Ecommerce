@@ -1,0 +1,291 @@
+/*
+ Document   : styles
+ Created on : Dec 3, 2013, 4:53:31 PM
+ Author     : tytran2014
+ Description: Purpose of the stylesheet follows.
+ */
+
+@charset "utf-8";
+
+body {
+	font-family: Arial;
+	font-size: 12px;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+#wrapper {
+
+}
+.content-block {
+	max-width: 1000px;
+	margin: 0px auto;
+	border: 0 !important;
+	/* background: #fff;*/
+}
+.hidden {
+	display: none;
+}
+.block {
+	max-width: 960px;
+	margin: 0px auto;
+}
+
+/*HEADER*/
+.top-admin {
+	height: 225px;
+	position: relative;
+}
+.logout {
+	position: absolute;
+	right: 0px;
+	top: 36%;
+	z-index: 2;
+}
+.logo-admin-top {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	background: url('../img/dotted_bar.gif') repeat-x bottom;
+	padding-bottom: 10px;
+	width: 100%;
+}
+.nav-admin {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.nav-admin .nav li {
+	margin-right: 5px;
+}
+.nav-admin .nav li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active, .active-menu-seller {
+	color: #ffffff;
+	background-image: none;
+	background-color: #00B8FF;
+}
+
+.nav .dropdown-toggle .caret {
+	border-top-color: #000;
+	border-bottom-color: #000;
+}
+.nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret {
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+}
+.title-admin {
+	background-color: #00B8FF;
+	color: #FFFFFF;
+	padding: 10px 0px;
+	margin: 0px 0px 20px;
+}
+.title-admin .title {
+	width: 960px;
+	margin: 0px auto;
+	text-align: center;
+}
+/*MENU*/
+
+/*LEFT*/
+.article .block-product {
+	/* margin-bottom: 10px;*/
+	border: 1px solid #ccc;
+	height: 28px;
+}
+.article .block-product {
+	height: 266px;
+	position: relative;
+}
+.article span.headline {
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	height: 25px;
+	margin-left: -15px;
+	margin-top: -1px;
+	padding-left: 28px;
+	padding-top: 5px;
+	background-color: #00B8FF;
+	text-align: left;
+	padding-top: 7px;
+	padding-left: 24px;
+}
+.article span.headline {
+	background-color: #00B8FF;
+	background-image: -ms-linear-gradient(left, #003A60, #00B8FF 30%);
+	background-image: -webkit-linear-gradient(left, #003A60 0%, #00B8FF 30%);
+	background-image: -moz-linear-gradient(left, #003A60 0%, #00B8FF 30%);
+	background-image: -o-linear-gradient(left, #003A600%, #00B8FF 30%);
+	background-image: linear-gradient(left, #003A60 0%, #00B8FF 30%);
+	color: #fff;
+	font-weight: bold;
+}
+.article span.headline i {
+	float: right;
+	font-size: 18px;
+	margin-right: 10px;
+	line-height: 18px;
+}
+.article .head-tab_bullet {
+	margin-left: -14px;
+	float: left;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 13px 13px 0;
+	border-color: transparent #00B8FF transparent transparent !important;
+}
+/*SHOW PRODUCT*/
+#content-product .article {
+	margin-bottom: 10px;
+	background: #fff;
+}
+#content-product .block-content {
+	padding: 10px;
+}
+#content-product .span4:nth-child(3n+1) {
+	margin-left: 0px;
+}
+/*PAGE DETAIL*/
+.content_button {
+	position: absolute;
+	bottom: 12px;
+}
+.content_button a {
+	width: 227px;
+	margin-left: 14px;
+	margin-top: 10px;
+	color: #333;
+}
+
+#copyright {
+	color: #fff;
+	font-size: 12px;
+	padding-top: 5px;
+	margin: 0 auto;
+	width: 960px;
+	text-align: right;
+}
+/* TABLE PRODUCT MANAGER*/
+.scroll-view {
+	max-height: 300px !important;
+	overflow-y: scroll;
+}
+.fix-boder {
+	border: 1px solid #BABABA !important;
+	/* border-radius: 10px 10px 0px 0px;*/
+	margin-bottom: 10px;
+}
+.purple-grid > .title {
+	background: #00B8FF;
+	height: 32px;
+	border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+	padding: 5px 5px 0px;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2) inset;
+}
+.purple-grid > .title h5 {
+	margin: 0;
+	padding: 5px 10px 0 10px;
+	color: #FFF;
+}
+.isw-plus {
+	background: url('../img/icons/ic_plus.png') center center no-repeat transparent;
+	padding: 11px 10px;
+	float: right;
+	margin-top: -21px;
+}
+.isw-back {
+	padding: 2px 5px;
+	float: right;
+	margin-top: -32px !important;
+	height: 10px;
+	color: #ffffff !important;
+}
+.isw-back:hover {
+	text-decoration: none;
+}
+#member-shop-grid_view tr th, #products-shop-grid tr th {
+	background-color: #E1F8E5 !important;
+	color: #0088cc;
+}
+.table .filters input, .table .filters select {
+	width: 80%;
+}
+span.required, .errorMessage {
+	color: red !important;
+}
+.info_profile ul {
+	margin: 0;
+	list-style-type: none;
+}
+.info_profile ul li div {
+	padding-left: 10px;
+}
+.info_profile ul li div.title {
+	font-weight: bold;
+	width: 20%;
+	float: left;
+}
+.info_profile ul li div.text {
+	/*padding-left: 21%;*/
+	min-height: 35px;
+}
+/**
+ * .info_profile ul li {
+ * line-height: 25px;
+ * border-bottom: 1px solid #B6BCFF;
+ * margin-bottom: 5px;
+ * padding-bottom: 5px;
+ * }
+ */
+.purple-grid {
+	border-radius: 10px 10px 0 0 !important;
+	border: 1px solid #ccc;
+}
+.icon-live-sale {
+	background-image: url("../img/sale-live.png");
+	height: 128px;
+	left: -23px;
+	position: relative;
+	top: 28px;
+	width: 145px;
+}
+.header-mss {
+	padding: 5px 0 0 10px;
+	background: #54ADFF;
+	border-radius: 8px 8px 0 0;
+}
+#fancybox_info {
+	width: 500px;
+	margin-bottom: 0 !important;
+}
+.content-scroll {
+	height: 500px;
+	overflow: scroll;
+}
+.bootstrap-filestyle {
+	margin-bottom: 20px;
+	display: block !important;
+}
+.bootstrap-filestyle > input {
+	width: 165px !important;
+	float: right;
+	margin-top: 3px !important;
+}
